@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<!--Code by Divinector (www.divinectorweb.com)-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HOMEPAGE | Lift & Fit Gym</title>
+    <link href="../static/homepage.png" rel="stylesheet">
+    <link rel="stylesheet" href="../static/homepage.css">    
+</head>
+<body>
+    <header>
+        <div class="wrapper">
+            <div class="logo">
+                <img src="../static/homepage.png" alt="" width="70" height="50">
+            </div>
+            <ul class="nav-area">
+                <li><b><a href="#">Home</a></b></li>
+                <li><b><a href="{{url_for('about')}}">ABOUT</a></b></li>
+                <li><b><a href="{{url_for('gallery')}}">GALLERY</a></b></li>
+                <li><b><a href="{{url_for('allusers')}}">CLIENTS</a></b></li>
+                <li><b><a href="{{url_for('index')}}">LOG OUT</a></b></li>
+            </ul>
+        </div>
+        <div class="welcome-text">
+            <h1 style="color:yellow;">LIFT AND FIT GYM</h1>
+            <b><a href="{{url_for('contact')}}">Contact US</a></b>
+        </div>
+    </header>
+    
+</body>
+</html>

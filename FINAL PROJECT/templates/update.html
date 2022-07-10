@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<!--=== Coding by CodingLab | www.codinglabweb.com === -->
+<html lang="en">
+<head>
+    <title>UPDATE | Lift & Fit Gym</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!----======== CSS ======== -->
+    <link rel="stylesheet" href="../static/update.css">
+     
+    <!----===== Iconscout CSS ===== -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+    <!--<title>Responsive Regisration Form </title>--> 
+</head>
+<body>
+    <div class="container">
+        <header>UPDATE INFORMATION</header>
+
+        <form method="POST" action="{{url_for('update')}}">
+		    <input type="hidden" name="uid" value="{{row[0]}}"/>
+            <div class="form first">
+                <div class="details personal">
+                    <span class="title">Details</span>
+
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>Full Name</label>
+                            <input name="name" type="text" placeholder="Enter your name" value='{{row[1]}}' required>
+                        </div>
+						
+						<div class="input-field">
+                            <label>Gender</label>
+							<input name="gender" value='{{row[2]}}' required>
+                            
+                        </div>
+						
+						<div class="input-field">
+                            <label>Mobile Number</label>
+                            <input name="phone" type="number" placeholder="Enter mobile number" value='{{row[3]}}' required>
+                        </div>
+
+
+                        <div class="input-field">
+                            <label>Joining Date</label>
+                            <input name="jdate" type="date" placeholder="Joining date" value='{{row[4]}}' required>
+                        </div>
+						
+						<div class="input-field">
+                            <label>Fees Paid</label>
+                            <input name="feespaid" type="number" placeholder="Fees paid" value='{{row[5]}}' required>
+                        </div>
+						
+						<div class="input-field">
+                            <label>Pending Fees</label>
+                            <input name="pendingfees" type="number" placeholder="Pending Fees" value='{{row[6]}}' required>
+                        </div>
+						
+						<div class="input-field">
+                            <label>Trainer</label>
+                            <input name="trainer" type="text" placeholder="Enter Trainer Name" value='{{row[7]}}' required>
+                        </div>
+						
+						<div class="input-field">
+                            <label>Weight</label>
+                            <input name="weight" type="number" placeholder="Weight" value='{{row[8]}}' required>
+                        </div>
+						
+						<div class="input-field">
+						    <label aria-hidden="true"> Password</label>
+                            <input type="text" name="username1" placeholder="Password" value='{{row[9]}}' required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Email</label>
+                            <input name="email" type="text" placeholder="Enter your email" value='{{row[10]}}' required>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="details ID">
+                    <button class="submit">
+                        <span class="btnText">Update</span>
+                        <i class="uil uil-navigator" ></i>
+                    </button>
+                </div> 
+            </div>
+        </form>
+    </div>
+
+    <!--<script src="script.js"></script>-->
+</body>
+</html>

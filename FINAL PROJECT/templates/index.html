@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Login | Lift & Fit Gym</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../static/login.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body background="../static/gym1.jpg">
+    <div class="container">
+      <div class="box">
+	    <h1 style="color:yellow">LIFT & FIT GYM</h1>
+        <h1>Log In Please ...</h1>
+        <div class="user">
+          <i class="fas fa-user"></i>
+          <input
+            type="text"
+            name="phone"
+            id="username"
+            placeholder="username"
+          />
+          <i class="fas fa-unlock-alt"></i>
+          <input
+            type="password"
+            name="username1"
+            id="password"
+            placeholder="password"
+          />
+        </div>
+        <p class="reset-password">Forgot Password?</p>
+       <div class="login-btn">
+        <button class="btn"><a style="color:white; text-decoration:none" href="{{url_for('homepage')}}">Log In</a></button>
+        <p class="signup" >First time here? <span><a style="color:yellow; text-decoration:none" href="{{url_for('register')}}">Sign up</a></span></p>
+       </div>
+      </div>
+    </div>
+  </body>
+</html>
